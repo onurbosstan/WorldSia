@@ -17,6 +17,8 @@
 		C6689C922C863D960005191C /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C6689C912C863D960005191C /* Alamofire */; };
 		C6689C942C863D960005191C /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = C6689C932C863D960005191C /* AlamofireDynamic */; };
 		C6689C972C863DD70005191C /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = C6689C962C863DD70005191C /* Kingfisher */; };
+		C6689C992C863E850005191C /* flyanimation.json in Resources */ = {isa = PBXBuildFile; fileRef = C6689C982C863E850005191C /* flyanimation.json */; };
+		C6689C9D2C863ECC0005191C /* AnimationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6689C9C2C863ECC0005191C /* AnimationHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		C6689C822C8635780005191C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C6689C852C8635780005191C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C6689C872C8635780005191C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6689C982C863E850005191C /* flyanimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = flyanimation.json; sourceTree = "<group>"; };
+		C6689C9C2C863ECC0005191C /* AnimationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,15 +68,33 @@
 		C6689C782C8635770005191C /* WorldSia */ = {
 			isa = PBXGroup;
 			children = (
-				C6689C792C8635770005191C /* AppDelegate.swift */,
-				C6689C7B2C8635770005191C /* SceneDelegate.swift */,
+				C6689C9B2C863EB70005191C /* Delegates */,
 				C6689C7D2C8635770005191C /* ViewController.swift */,
+				C6689C9A2C863E9C0005191C /* Animation */,
 				C6689C7F2C8635770005191C /* Main.storyboard */,
 				C6689C822C8635780005191C /* Assets.xcassets */,
 				C6689C842C8635780005191C /* LaunchScreen.storyboard */,
 				C6689C872C8635780005191C /* Info.plist */,
 			);
 			path = WorldSia;
+			sourceTree = "<group>";
+		};
+		C6689C9A2C863E9C0005191C /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				C6689C9C2C863ECC0005191C /* AnimationHelper.swift */,
+				C6689C982C863E850005191C /* flyanimation.json */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		C6689C9B2C863EB70005191C /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				C6689C792C8635770005191C /* AppDelegate.swift */,
+				C6689C7B2C8635770005191C /* SceneDelegate.swift */,
+			);
+			path = Delegates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,6 +166,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6689C992C863E850005191C /* flyanimation.json in Resources */,
 				C6689C832C8635780005191C /* Assets.xcassets in Resources */,
 				C6689C862C8635780005191C /* Base in Resources */,
 				C6689C812C8635770005191C /* Base in Resources */,
@@ -157,6 +180,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6689C9D2C863ECC0005191C /* AnimationHelper.swift in Sources */,
 				C6689C7E2C8635770005191C /* ViewController.swift in Sources */,
 				C6689C7A2C8635770005191C /* AppDelegate.swift in Sources */,
 				C6689C7C2C8635770005191C /* SceneDelegate.swift in Sources */,
