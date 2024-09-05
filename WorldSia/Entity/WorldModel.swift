@@ -8,7 +8,7 @@
 import Foundation
 
 // MARK: - WelcomeElement
-struct WelcomeElement: Codable {
+struct WorldModel: Codable {
     let name: Name
     let tld: [String]
     let cca2, ccn3, cca3: String
@@ -113,4 +113,4 @@ struct Translation: Codable {
     let official, common: String
 }
 
-typealias Welcome = [WelcomeElement]
+typealias World = [WorldModel]
