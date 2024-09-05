@@ -20,6 +20,7 @@
 		C6689C992C863E850005191C /* flyanimation.json in Resources */ = {isa = PBXBuildFile; fileRef = C6689C982C863E850005191C /* flyanimation.json */; };
 		C6689C9D2C863ECC0005191C /* AnimationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6689C9C2C863ECC0005191C /* AnimationHelper.swift */; };
 		C6689CA02C88E63C0005191C /* WorldRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6689C9F2C88E63C0005191C /* WorldRoutes.swift */; };
+		C6689CA32C8A2F810005191C /* WorldModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6689CA22C8A2F810005191C /* WorldModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		C6689C982C863E850005191C /* flyanimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = flyanimation.json; sourceTree = "<group>"; };
 		C6689C9C2C863ECC0005191C /* AnimationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationHelper.swift; sourceTree = "<group>"; };
 		C6689C9F2C88E63C0005191C /* WorldRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldRoutes.swift; sourceTree = "<group>"; };
+		C6689CA22C8A2F810005191C /* WorldModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 				C6689C9B2C863EB70005191C /* Delegates */,
 				C6689C9E2C88E6000005191C /* APIs */,
 				C6689C7D2C8635770005191C /* ViewController.swift */,
+				C6689CA12C8A2F630005191C /* Entity */,
 				C6689C9A2C863E9C0005191C /* Animation */,
 				C6689C7F2C8635770005191C /* Main.storyboard */,
 				C6689C822C8635780005191C /* Assets.xcassets */,
@@ -106,6 +109,14 @@
 				C6689C9F2C88E63C0005191C /* WorldRoutes.swift */,
 			);
 			path = APIs;
+			sourceTree = "<group>";
+		};
+		C6689CA12C8A2F630005191C /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				C6689CA22C8A2F810005191C /* WorldModel.swift */,
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +206,7 @@
 				C6689C7E2C8635770005191C /* ViewController.swift in Sources */,
 				C6689C7A2C8635770005191C /* AppDelegate.swift in Sources */,
 				C6689CA02C88E63C0005191C /* WorldRoutes.swift in Sources */,
+				C6689CA32C8A2F810005191C /* WorldModel.swift in Sources */,
 				C6689C7C2C8635770005191C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
