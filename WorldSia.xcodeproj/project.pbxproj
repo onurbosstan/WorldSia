@@ -21,6 +21,7 @@
 		C6689C9D2C863ECC0005191C /* AnimationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6689C9C2C863ECC0005191C /* AnimationHelper.swift */; };
 		C6689CA02C88E63C0005191C /* WorldRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6689C9F2C88E63C0005191C /* WorldRoutes.swift */; };
 		C6689CA32C8A2F810005191C /* WorldModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6689CA22C8A2F810005191C /* WorldModel.swift */; };
+		C6A537D02C91CD6800426E42 /* WorldServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A537CF2C91CD6800426E42 /* WorldServices.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		C6689C9C2C863ECC0005191C /* AnimationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationHelper.swift; sourceTree = "<group>"; };
 		C6689C9F2C88E63C0005191C /* WorldRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldRoutes.swift; sourceTree = "<group>"; };
 		C6689CA22C8A2F810005191C /* WorldModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldModel.swift; sourceTree = "<group>"; };
+		C6A537CF2C91CD6800426E42 /* WorldServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldServices.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,9 +74,12 @@
 		C6689C782C8635770005191C /* WorldSia */ = {
 			isa = PBXGroup;
 			children = (
-				C6689C9B2C863EB70005191C /* Delegates */,
+				C6A537C72C91CC5300426E42 /* System */,
 				C6689C9E2C88E6000005191C /* APIs */,
-				C6689C7D2C8635770005191C /* WorldVC.swift */,
+				C6A537C82C91CC6200426E42 /* Data */,
+				C6A537CA2C91CC7D00426E42 /* UI */,
+				C6A537CC2C91CC9800426E42 /* Cells */,
+				C6A537CE2C91CCAA00426E42 /* ViewControllers */,
 				C6689CA12C8A2F630005191C /* Entity */,
 				C6689C9A2C863E9C0005191C /* Animation */,
 				C6689C7F2C8635770005191C /* Main.storyboard */,
@@ -117,6 +122,60 @@
 				C6689CA22C8A2F810005191C /* WorldModel.swift */,
 			);
 			path = Entity;
+			sourceTree = "<group>";
+		};
+		C6A537C72C91CC5300426E42 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				C6689C9B2C863EB70005191C /* Delegates */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		C6A537C82C91CC6200426E42 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C6A537C92C91CC7200426E42 /* Services */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		C6A537C92C91CC7200426E42 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C6A537CF2C91CD6800426E42 /* WorldServices.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C6A537CA2C91CC7D00426E42 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				C6A537CB2C91CC9000426E42 /* ViewModels */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		C6A537CB2C91CC9000426E42 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C6A537CC2C91CC9800426E42 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		C6A537CE2C91CCAA00426E42 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C6689C7D2C8635770005191C /* WorldVC.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,6 +267,7 @@
 				C6689CA02C88E63C0005191C /* WorldRoutes.swift in Sources */,
 				C6689CA32C8A2F810005191C /* WorldModel.swift in Sources */,
 				C6689C7C2C8635770005191C /* SceneDelegate.swift in Sources */,
+				C6A537D02C91CD6800426E42 /* WorldServices.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
