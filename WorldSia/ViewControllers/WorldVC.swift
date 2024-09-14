@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import Kingfisher
+import Alamofire
 
 class WorldVC: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
