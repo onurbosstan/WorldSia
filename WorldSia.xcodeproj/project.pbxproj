@@ -21,6 +21,9 @@
 		C6689C9D2C863ECC0005191C /* AnimationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6689C9C2C863ECC0005191C /* AnimationHelper.swift */; };
 		C6689CA02C88E63C0005191C /* WorldRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6689C9F2C88E63C0005191C /* WorldRoutes.swift */; };
 		C6689CA32C8A2F810005191C /* WorldModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6689CA22C8A2F810005191C /* WorldModel.swift */; };
+		C6828D802C961CEE00BBC33D /* WorldViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6828D7F2C961CEE00BBC33D /* WorldViewModel.swift */; };
+		C6828D822C961D0D00BBC33D /* WorldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6828D812C961D0D00BBC33D /* WorldCell.swift */; };
+		C6828D852C961DAF00BBC33D /* WorldCollectionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6828D842C961DAF00BBC33D /* WorldCollectionLayout.swift */; };
 		C6A537D02C91CD6800426E42 /* WorldServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A537CF2C91CD6800426E42 /* WorldServices.swift */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +40,9 @@
 		C6689C9C2C863ECC0005191C /* AnimationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationHelper.swift; sourceTree = "<group>"; };
 		C6689C9F2C88E63C0005191C /* WorldRoutes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldRoutes.swift; sourceTree = "<group>"; };
 		C6689CA22C8A2F810005191C /* WorldModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldModel.swift; sourceTree = "<group>"; };
+		C6828D7F2C961CEE00BBC33D /* WorldViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldViewModel.swift; sourceTree = "<group>"; };
+		C6828D812C961D0D00BBC33D /* WorldCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldCell.swift; sourceTree = "<group>"; };
+		C6828D842C961DAF00BBC33D /* WorldCollectionLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldCollectionLayout.swift; sourceTree = "<group>"; };
 		C6A537CF2C91CD6800426E42 /* WorldServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldServices.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -124,6 +130,15 @@
 			path = Entity;
 			sourceTree = "<group>";
 		};
+		C6828D832C961D7100BBC33D /* WorldCell */ = {
+			isa = PBXGroup;
+			children = (
+				C6828D812C961D0D00BBC33D /* WorldCell.swift */,
+				C6828D842C961DAF00BBC33D /* WorldCollectionLayout.swift */,
+			);
+			path = WorldCell;
+			sourceTree = "<group>";
+		};
 		C6A537C72C91CC5300426E42 /* System */ = {
 			isa = PBXGroup;
 			children = (
@@ -159,6 +174,7 @@
 		C6A537CB2C91CC9000426E42 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				C6828D7F2C961CEE00BBC33D /* WorldViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -166,6 +182,7 @@
 		C6A537CC2C91CC9800426E42 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				C6828D832C961D7100BBC33D /* WorldCell */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -262,9 +279,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6689C9D2C863ECC0005191C /* AnimationHelper.swift in Sources */,
+				C6828D822C961D0D00BBC33D /* WorldCell.swift in Sources */,
 				C6689C7E2C8635770005191C /* WorldVC.swift in Sources */,
 				C6689C7A2C8635770005191C /* AppDelegate.swift in Sources */,
+				C6828D802C961CEE00BBC33D /* WorldViewModel.swift in Sources */,
 				C6689CA02C88E63C0005191C /* WorldRoutes.swift in Sources */,
+				C6828D852C961DAF00BBC33D /* WorldCollectionLayout.swift in Sources */,
 				C6689CA32C8A2F810005191C /* WorldModel.swift in Sources */,
 				C6689C7C2C8635770005191C /* SceneDelegate.swift in Sources */,
 				C6A537D02C91CD6800426E42 /* WorldServices.swift in Sources */,
