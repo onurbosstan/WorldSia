@@ -20,6 +20,10 @@ class WorldVC: UIViewController {
         collectionView.collectionViewLayout = UICollectionViewLayout()
         collectionView.collectionViewLayout = WorldCollectionLayout(colmnsNumber: 2, minColmnsNumber: 1, minCell: 1)
     }
+    
+    @IBAction func menuButton(_ sender: Any) {
+        
+    }
 }
 extension WorldVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
