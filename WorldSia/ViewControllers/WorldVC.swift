@@ -11,6 +11,7 @@ import Alamofire
 
 class WorldVC: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var searchBar: UISearchBar!
     var viewModel = WorldViewModel()
     
     override func viewDidLoad() {
