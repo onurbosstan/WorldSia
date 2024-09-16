@@ -20,8 +20,11 @@ class WorldVC: UIViewController {
         collectionView.collectionViewLayout = UICollectionViewLayout()
         collectionView.collectionViewLayout = WorldCollectionLayout(colmnsNumber: 2, minColmnsNumber: 1, minCell: 1)
         
+        AnimationHelper.showActivityIndicator(animationName: "flyanimation")
+        
         viewModel.fetchCountries { [weak self] in
             DispatchQueue.main.async {
+                AnimationHelper.hideActivityIndicator()
                 self?.collectionView.reloadData()
             }
         }
