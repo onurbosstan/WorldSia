@@ -20,11 +20,9 @@ class WorldVC: UIViewController {
         collectionView.dataSource = self
         collectionView.collectionViewLayout = UICollectionViewLayout()
         collectionView.collectionViewLayout = WorldCollectionLayout(colmnsNumber: 2, minColmnsNumber: 1, minCell: 1)
-        
         searchBar.delegate = self
         
         AnimationHelper.showActivityIndicator(animationName: "flyanimation")
-        
         viewModel.fetchCountries { [weak self] in
             DispatchQueue.main.async {
                 AnimationHelper.hideActivityIndicator()
@@ -32,11 +30,11 @@ class WorldVC: UIViewController {
             }
         }
     }
-    
     @IBAction func menuButton(_ sender: Any) {
         
     }
 }
+
 extension WorldVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return viewModel.numberOfItems()

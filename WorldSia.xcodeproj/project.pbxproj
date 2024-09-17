@@ -24,6 +24,8 @@
 		C6828D822C961D0D00BBC33D /* WorldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6828D812C961D0D00BBC33D /* WorldCell.swift */; };
 		C6828D852C961DAF00BBC33D /* WorldCollectionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6828D842C961DAF00BBC33D /* WorldCollectionLayout.swift */; };
 		C6A537D02C91CD6800426E42 /* WorldServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A537CF2C91CD6800426E42 /* WorldServices.swift */; };
+		C6F005CE2C99A17600BE5EAE /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F005CD2C99A17600BE5EAE /* Menu.swift */; };
+		C6F005D02C99A1F800BE5EAE /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F005CF2C99A1F800BE5EAE /* MenuCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -56,6 +58,8 @@
 		C6828D812C961D0D00BBC33D /* WorldCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldCell.swift; sourceTree = "<group>"; };
 		C6828D842C961DAF00BBC33D /* WorldCollectionLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldCollectionLayout.swift; sourceTree = "<group>"; };
 		C6A537CF2C91CD6800426E42 /* WorldServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldServices.swift; sourceTree = "<group>"; };
+		C6F005CD2C99A17600BE5EAE /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		C6F005CF2C99A1F800BE5EAE /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +150,7 @@
 			children = (
 				C6828D812C961D0D00BBC33D /* WorldCell.swift */,
 				C6828D842C961DAF00BBC33D /* WorldCollectionLayout.swift */,
+				C6F005CF2C99A1F800BE5EAE /* MenuCell.swift */,
 			);
 			path = WorldCell;
 			sourceTree = "<group>";
@@ -202,6 +207,7 @@
 			isa = PBXGroup;
 			children = (
 				C6689C7D2C8635770005191C /* WorldVC.swift */,
+				C6F005CD2C99A17600BE5EAE /* Menu.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -291,9 +297,11 @@
 			files = (
 				C6689C9D2C863ECC0005191C /* AnimationHelper.swift in Sources */,
 				C6828D822C961D0D00BBC33D /* WorldCell.swift in Sources */,
+				C6F005D02C99A1F800BE5EAE /* MenuCell.swift in Sources */,
 				C6689C7E2C8635770005191C /* WorldVC.swift in Sources */,
 				C6689C7A2C8635770005191C /* AppDelegate.swift in Sources */,
 				C6828D802C961CEE00BBC33D /* WorldViewModel.swift in Sources */,
+				C6F005CE2C99A17600BE5EAE /* Menu.swift in Sources */,
 				C6689CA02C88E63C0005191C /* WorldRoutes.swift in Sources */,
 				C6828D852C961DAF00BBC33D /* WorldCollectionLayout.swift in Sources */,
 				C6689CA32C8A2F810005191C /* WorldModel.swift in Sources */,
