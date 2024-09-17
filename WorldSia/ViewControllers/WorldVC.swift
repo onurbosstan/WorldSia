@@ -21,6 +21,8 @@ class WorldVC: UIViewController {
         collectionView.collectionViewLayout = UICollectionViewLayout()
         collectionView.collectionViewLayout = WorldCollectionLayout(colmnsNumber: 2, minColmnsNumber: 1, minCell: 1)
         
+        searchBar.delegate = self
+        
         AnimationHelper.showActivityIndicator(animationName: "flyanimation")
         
         viewModel.fetchCountries { [weak self] in
@@ -48,4 +50,13 @@ extension WorldVC: UICollectionViewDelegate, UICollectionViewDataSource, UIColle
             }
             return cell
         }
+}
+extension WorldVC: UISearchBarDelegate {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        viewModel.filterCountries(with: searchText)
+        collectionView.reloadData()
+    }
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
+    }
 }
