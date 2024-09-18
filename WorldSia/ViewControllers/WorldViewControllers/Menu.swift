@@ -37,11 +37,15 @@ extension Menu: UITableViewDelegate, UITableViewDataSource {
         return choiseItem.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MenuCell", for: indexPath) as! MenuCell
+        cell.choiceLabel.text = choiseItem[indexPath.row]
+        return cell
     }
+    /*
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         <#code#>
     }
+     */
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 50
     }
