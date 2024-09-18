@@ -7,9 +7,14 @@
 
 import UIKit
 
+protocol MenuDelegate: AnyObject {
+    func didSelectOption(_ option: String)
+}
+
 class Menu: UIViewController {
     @IBOutlet weak var tableView: UITableView!
-    var choiseItem = [""]
+    weak var delegate: MenuDelegate?
+    var choiseItem = ["Our Picks"]
     
     override func viewDidLoad() {
         super.viewDidLoad()

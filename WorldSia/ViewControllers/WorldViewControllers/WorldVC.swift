@@ -9,7 +9,7 @@ import UIKit
 import Kingfisher
 import Alamofire
 
-class WorldVC: UIViewController {
+class WorldVC: UIViewController, MenuDelegate {
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var searchBar: UISearchBar!
     var viewModel = WorldViewModel()
@@ -32,7 +32,22 @@ class WorldVC: UIViewController {
         }
     }
     @IBAction func menuButton(_ sender: Any) {
-        
+        if menuViewController == nil {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            if let menuVC = storyboard.instantiateViewController(withIdentifier: "Menu") as? Menu {
+                menuVC.delegate = self
+                menuViewController = menuVC
+                addChild(menuVC)
+                view.addSubview(menuVC.view)
+                menuVC.didMove(toParent: self)
+            }
+        }
+        menuViewController?.showMenu()
+    }
+    func didSelectOption(_ option: String) {
+        if option == "Our Picks" {
+            performSegue(withIdentifier: "", sender: nil)
+        }
     }
 }
 
