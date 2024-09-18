@@ -206,10 +206,18 @@
 		C6A537CE2C91CCAA00426E42 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				C6F005D12C99A49600BE5EAE /* WorldViewControllers */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C6F005D12C99A49600BE5EAE /* WorldViewControllers */ = {
+			isa = PBXGroup;
+			children = (
 				C6689C7D2C8635770005191C /* WorldVC.swift */,
 				C6F005CD2C99A17600BE5EAE /* Menu.swift */,
 			);
-			path = ViewControllers;
+			path = WorldViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

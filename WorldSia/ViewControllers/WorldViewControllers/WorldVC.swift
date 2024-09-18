@@ -13,6 +13,7 @@ class WorldVC: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var searchBar: UISearchBar!
     var viewModel = WorldViewModel()
+    var menuViewController: Menu?
     
     override func viewDidLoad() {
         super.viewDidLoad()
