@@ -18,14 +18,13 @@
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="world" translatesAutoresizingMaskIntoConstraints="NO" id="4YX-Xf-gcC">
                                 <rect key="frame" x="40" y="145" width="313" height="356"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="356" id="DNn-3a-hvk"/>
-                                    <constraint firstAttribute="width" constant="313" id="d8i-D1-l9M"/>
-                                </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discover the world..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S4s-ic-Rry">
-                                <rect key="frame" x="16" y="531" width="361" height="27.333333333333371"/>
-                                <fontDescription key="fontDescription" name="CourierNewPS-BoldItalicMT" family="Courier New" pointSize="24"/>
+                                <rect key="frame" x="16" y="531" width="361" height="27.666666666666629"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27.666666666666629" id="MZB-XE-psN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cochin-BoldItalic" family="Cochin" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -33,15 +32,13 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="4YX-Xf-gcC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="86" id="2d8-Nc-bPc"/>
-                            <constraint firstItem="4YX-Xf-gcC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="86" id="B0A-FT-6ea"/>
-                            <constraint firstItem="S4s-ic-Rry" firstAttribute="top" secondItem="4YX-Xf-gcC" secondAttribute="bottom" constant="30" id="F3Q-PF-LVI"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="S4s-ic-Rry" secondAttribute="trailing" constant="16" id="L3A-YM-zEe"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4YX-Xf-gcC" secondAttribute="trailing" constant="40" id="LmW-3n-bZT"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4YX-Xf-gcC" secondAttribute="trailing" constant="40" id="PpM-Qc-fe6"/>
-                            <constraint firstItem="4YX-Xf-gcC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="Y4j-R2-iUl"/>
-                            <constraint firstItem="4YX-Xf-gcC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="yUz-1h-jhT"/>
-                            <constraint firstItem="S4s-ic-Rry" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="z9W-EZ-qcU"/>
+                            <constraint firstItem="S4s-ic-Rry" firstAttribute="top" secondItem="4YX-Xf-gcC" secondAttribute="bottom" constant="30" id="CgP-yj-MdG"/>
+                            <constraint firstItem="S4s-ic-Rry" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailingMargin" id="Ut4-Jm-DA4"/>
+                            <constraint firstItem="4YX-Xf-gcC" firstAttribute="centerX" secondItem="S4s-ic-Rry" secondAttribute="centerX" id="ZZT-QK-xkB"/>
+                            <constraint firstItem="S4s-ic-Rry" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="ebC-df-tdv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="S4s-ic-Rry" secondAttribute="bottom" constant="259.33333333333337" id="edq-TU-vkA"/>
+                            <constraint firstItem="4YX-Xf-gcC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="86" id="goG-OF-gzf"/>
+                            <constraint firstItem="4YX-Xf-gcC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="xQW-sB-WXb"/>
                         </constraints>
                     </view>
                 </viewController>
