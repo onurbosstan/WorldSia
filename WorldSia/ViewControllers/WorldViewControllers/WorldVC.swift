@@ -14,6 +14,7 @@ class WorldVC: UIViewController, MenuDelegate {
     @IBOutlet weak var searchBar: UISearchBar!
     var viewModel = WorldViewModel()
     var menuViewController: Menu?
+    var selectedCountry: WorldModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,6 +50,13 @@ class WorldVC: UIViewController, MenuDelegate {
             performSegue(withIdentifier: "", sender: nil)
         }
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toDetails", let destinationVC = segue.destination as? WorldDetailsVC {
+            if let selectedCountry = selectedCountry {
+                destinationVC.viewModel = WorldDetailsViewModel(country: selectedCountry)
+            }
+        }
+    }
 }
 
 extension WorldVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
@@ -64,6 +72,11 @@ extension WorldVC: UICollectionViewDelegate, UICollectionViewDataSource, UIColle
             }
             return cell
         }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        selectedCountry = viewModel.country(at: indexPath.item)
+        performSegue(withIdentifier: "toDetails", sender: self)
+    }
+    
 }
 extension WorldVC: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
