@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C61B9B032CA2AFDC00BF144B /* WorldDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61B9B022CA2AFDC00BF144B /* WorldDetailsVC.swift */; };
+		C61B9B052CA2BF1700BF144B /* WorldDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61B9B042CA2BF1700BF144B /* WorldDetailsCell.swift */; };
+		C61B9B072CA2C05200BF144B /* WorldDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61B9B062CA2C05200BF144B /* WorldDetailsViewModel.swift */; };
 		C6689C7A2C8635770005191C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6689C792C8635770005191C /* AppDelegate.swift */; };
 		C6689C7C2C8635770005191C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6689C7B2C8635770005191C /* SceneDelegate.swift */; };
 		C6689C7E2C8635770005191C /* WorldVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6689C7D2C8635770005191C /* WorldVC.swift */; };
@@ -42,6 +45,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C61B9B022CA2AFDC00BF144B /* WorldDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldDetailsVC.swift; sourceTree = "<group>"; };
+		C61B9B042CA2BF1700BF144B /* WorldDetailsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldDetailsCell.swift; sourceTree = "<group>"; };
+		C61B9B062CA2C05200BF144B /* WorldDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldDetailsViewModel.swift; sourceTree = "<group>"; };
 		C6689C762C8635770005191C /* WorldSia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldSia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6689C792C8635770005191C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6689C7B2C8635770005191C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -151,6 +157,7 @@
 				C6828D812C961D0D00BBC33D /* WorldCell.swift */,
 				C6828D842C961DAF00BBC33D /* WorldCollectionLayout.swift */,
 				C6F005CF2C99A1F800BE5EAE /* MenuCell.swift */,
+				C61B9B042CA2BF1700BF144B /* WorldDetailsCell.swift */,
 			);
 			path = WorldCell;
 			sourceTree = "<group>";
@@ -191,6 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				C6828D7F2C961CEE00BBC33D /* WorldViewModel.swift */,
+				C61B9B062CA2C05200BF144B /* WorldDetailsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -216,6 +224,7 @@
 			children = (
 				C6689C7D2C8635770005191C /* WorldVC.swift */,
 				C6F005CD2C99A17600BE5EAE /* Menu.swift */,
+				C61B9B022CA2AFDC00BF144B /* WorldDetailsVC.swift */,
 			);
 			path = WorldViewControllers;
 			sourceTree = "<group>";
@@ -306,15 +315,18 @@
 				C6689C9D2C863ECC0005191C /* AnimationHelper.swift in Sources */,
 				C6828D822C961D0D00BBC33D /* WorldCell.swift in Sources */,
 				C6F005D02C99A1F800BE5EAE /* MenuCell.swift in Sources */,
+				C61B9B052CA2BF1700BF144B /* WorldDetailsCell.swift in Sources */,
 				C6689C7E2C8635770005191C /* WorldVC.swift in Sources */,
 				C6689C7A2C8635770005191C /* AppDelegate.swift in Sources */,
 				C6828D802C961CEE00BBC33D /* WorldViewModel.swift in Sources */,
 				C6F005CE2C99A17600BE5EAE /* Menu.swift in Sources */,
 				C6689CA02C88E63C0005191C /* WorldRoutes.swift in Sources */,
 				C6828D852C961DAF00BBC33D /* WorldCollectionLayout.swift in Sources */,
+				C61B9B072CA2C05200BF144B /* WorldDetailsViewModel.swift in Sources */,
 				C6689CA32C8A2F810005191C /* WorldModel.swift in Sources */,
 				C6689C7C2C8635770005191C /* SceneDelegate.swift in Sources */,
 				C6A537D02C91CD6800426E42 /* WorldServices.swift in Sources */,
+				C61B9B032CA2AFDC00BF144B /* WorldDetailsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
