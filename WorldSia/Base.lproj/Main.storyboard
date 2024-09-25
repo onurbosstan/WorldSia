@@ -3,6 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Map view configurations" minToolsVersion="14.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -190,12 +191,22 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Er-Rg-d6Y">
+                                                    <rect key="frame" x="16" y="313" width="361" height="192"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="357" id="fpJ-fQ-Pgy"/>
+                                                        <constraint firstAttribute="height" constant="192" id="jMQ-rh-5gs"/>
+                                                    </constraints>
+                                                    <standardMapConfiguration key="preferredConfiguration"/>
+                                                </mapView>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="DKm-Ys-Cg1" firstAttribute="top" secondItem="Uw4-qQ-AJm" secondAttribute="bottom" constant="20" id="1O8-nW-HIf"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="jp6-aZ-SN9" secondAttribute="trailing" constant="16" id="46Y-1x-gK2"/>
                                                 <constraint firstItem="AO4-04-Esc" firstAttribute="top" secondItem="Hpo-wd-y6F" secondAttribute="topMargin" id="5JH-Mk-d7G"/>
+                                                <constraint firstItem="6Er-Rg-d6Y" firstAttribute="top" secondItem="jp6-aZ-SN9" secondAttribute="bottom" constant="30" id="6ih-79-Ztp"/>
                                                 <constraint firstItem="AO4-04-Esc" firstAttribute="leading" secondItem="Hpo-wd-y6F" secondAttribute="leadingMargin" id="6r2-0B-bVa"/>
+                                                <constraint firstItem="6Er-Rg-d6Y" firstAttribute="leading" secondItem="Hpo-wd-y6F" secondAttribute="leading" constant="16" id="CGx-Fg-6Zu"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="Uw4-qQ-AJm" secondAttribute="trailing" constant="16" id="CQP-fL-6dd"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="Xb9-Yc-kDP" secondAttribute="trailing" constant="16" id="DCQ-I1-3A6"/>
                                                 <constraint firstItem="uUS-xh-p6d" firstAttribute="top" secondItem="Hpo-wd-y6F" secondAttribute="top" constant="30" id="Dtb-Sr-mRa"/>
@@ -204,6 +215,7 @@
                                                 <constraint firstItem="jp6-aZ-SN9" firstAttribute="leading" secondItem="Hpo-wd-y6F" secondAttribute="leadingMargin" id="GBa-hu-BkP"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="oS2-xh-gmP" secondAttribute="trailing" constant="16" id="HEe-9P-5At"/>
                                                 <constraint firstItem="Uw4-qQ-AJm" firstAttribute="leading" secondItem="Hpo-wd-y6F" secondAttribute="leadingMargin" id="IWY-Xo-7gT"/>
+                                                <constraint firstAttribute="trailing" secondItem="6Er-Rg-d6Y" secondAttribute="trailing" constant="16" id="Jaz-oQ-x9e"/>
                                                 <constraint firstItem="jp6-aZ-SN9" firstAttribute="top" secondItem="DKm-Ys-Cg1" secondAttribute="bottom" constant="20" id="Jtr-dV-ObE"/>
                                                 <constraint firstItem="oS2-xh-gmP" firstAttribute="top" secondItem="AO4-04-Esc" secondAttribute="bottom" constant="20" id="JvF-uI-4o9"/>
                                                 <constraint firstItem="Nxe-1G-SkW" firstAttribute="top" secondItem="uUS-xh-p6d" secondAttribute="bottom" constant="10" id="Kkd-wM-SDc"/>
@@ -224,6 +236,7 @@
                                             <outlet property="currenciesLabel" destination="DKm-Ys-Cg1" id="Ogz-m9-kI8"/>
                                             <outlet property="detailsImageView" destination="AO4-04-Esc" id="CJK-ad-54W"/>
                                             <outlet property="languageLabel" destination="Uw4-qQ-AJm" id="xk8-tW-5Bm"/>
+                                            <outlet property="mapView" destination="6Er-Rg-d6Y" id="Kha-YH-jTg"/>
                                             <outlet property="populationLabel" destination="Xb9-Yc-kDP" id="p2w-gb-GYm"/>
                                             <outlet property="regionLabel" destination="oS2-xh-gmP" id="dLv-Bw-8UR"/>
                                         </connections>

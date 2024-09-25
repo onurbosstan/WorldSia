@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import MapKit
 
 class WorldDetailsCell: UITableViewCell {
     @IBOutlet weak var detailsImageView: UIImageView!
@@ -16,16 +17,27 @@ class WorldDetailsCell: UITableViewCell {
     @IBOutlet weak var languageLabel: UILabel!
     @IBOutlet weak var currenciesLabel: UILabel!
     @IBOutlet weak var capitalInfoLabel: UILabel!
+    @IBOutlet weak var mapView: MKMapView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
+    func configureMap(latitude: Double?, longitude: Double?) {
+            guard let lat = latitude, let lon = longitude else {
+                return
+            }
+            
+            // Enlem ve boylama göre konum ayarlama
+            let location = CLLocationCoordinate2D(latitude: lat, longitude: lon)
+            let region = MKCoordinateRegion(center: location, latitudinalMeters: 1000000, longitudinalMeters: 1000000)
+            mapView.setRegion(region, animated: true)
+            
+            // İşaretleyici (pin) ekle
+            let annotation = MKPointAnnotation()
+            annotation.coordinate = location
+            annotation.title = "Country Location"
+            mapView.addAnnotation(annotation)
+        }
 
 }

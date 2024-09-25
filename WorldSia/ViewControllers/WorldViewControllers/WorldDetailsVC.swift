@@ -16,6 +16,7 @@ class WorldDetailsVC: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.reloadData()
+        
     }
 }
 extension WorldDetailsVC: UITableViewDelegate, UITableViewDataSource {
@@ -40,11 +41,12 @@ extension WorldDetailsVC: UITableViewDelegate, UITableViewDataSource {
             } else {
                 cell.detailsImageView.image = UIImage(named: "placeholder")
             }
+            cell.configureMap(latitude: viewModel.latitude, longitude: viewModel.longitude)
         }
         return cell
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 300
+        return 500
     }
 }
 

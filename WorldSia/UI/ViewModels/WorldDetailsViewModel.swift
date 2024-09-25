@@ -18,6 +18,14 @@ class WorldDetailsViewModel {
         return country.name?.common ?? "Unknown"
     }
     
+    var latitude: Double? {
+        return country.latlng?.first
+    }
+    
+    var longitude: Double? {
+        return country.latlng?.last
+    }
+    
     var capitalName: String {
         return "Capital: \(country.capital?.first ?? "N/A")"
     }
@@ -49,4 +57,5 @@ class WorldDetailsViewModel {
         guard let urlString = country.flags?.png else { return nil }
         return URL(string: urlString)
     }
+
 }
