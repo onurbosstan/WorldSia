@@ -185,48 +185,48 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="capitalInfoLabel" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jp6-aZ-SN9">
-                                                    <rect key="frame" x="20" y="265" width="337" height="18"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                                 <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Er-Rg-d6Y">
-                                                    <rect key="frame" x="16" y="313" width="361" height="192"/>
+                                                    <rect key="frame" x="16" y="307.33333333333331" width="361" height="192"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="357" id="fpJ-fQ-Pgy"/>
-                                                        <constraint firstAttribute="height" constant="192" id="jMQ-rh-5gs"/>
+                                                        <constraint firstAttribute="width" constant="361" id="H5H-rW-D6x"/>
+                                                        <constraint firstAttribute="height" constant="192" id="woE-Mf-Efc"/>
                                                     </constraints>
                                                     <standardMapConfiguration key="preferredConfiguration"/>
                                                 </mapView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="capitalInfoLabel" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jp6-aZ-SN9">
+                                                    <rect key="frame" x="16" y="285" width="361" height="14.333333333333314"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="jp6-aZ-SN9" firstAttribute="leading" secondItem="Hpo-wd-y6F" secondAttribute="leading" constant="16" id="0yg-Rh-XV0"/>
                                                 <constraint firstItem="DKm-Ys-Cg1" firstAttribute="top" secondItem="Uw4-qQ-AJm" secondAttribute="bottom" constant="20" id="1O8-nW-HIf"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="jp6-aZ-SN9" secondAttribute="trailing" constant="16" id="46Y-1x-gK2"/>
+                                                <constraint firstItem="6Er-Rg-d6Y" firstAttribute="leading" secondItem="Hpo-wd-y6F" secondAttribute="leading" constant="16" id="4qj-4J-JaU"/>
                                                 <constraint firstItem="AO4-04-Esc" firstAttribute="top" secondItem="Hpo-wd-y6F" secondAttribute="topMargin" id="5JH-Mk-d7G"/>
-                                                <constraint firstItem="6Er-Rg-d6Y" firstAttribute="top" secondItem="jp6-aZ-SN9" secondAttribute="bottom" constant="30" id="6ih-79-Ztp"/>
                                                 <constraint firstItem="AO4-04-Esc" firstAttribute="leading" secondItem="Hpo-wd-y6F" secondAttribute="leadingMargin" id="6r2-0B-bVa"/>
-                                                <constraint firstItem="6Er-Rg-d6Y" firstAttribute="leading" secondItem="Hpo-wd-y6F" secondAttribute="leading" constant="16" id="CGx-Fg-6Zu"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="Uw4-qQ-AJm" secondAttribute="trailing" constant="16" id="CQP-fL-6dd"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="Xb9-Yc-kDP" secondAttribute="trailing" constant="16" id="DCQ-I1-3A6"/>
                                                 <constraint firstItem="uUS-xh-p6d" firstAttribute="top" secondItem="Hpo-wd-y6F" secondAttribute="top" constant="30" id="Dtb-Sr-mRa"/>
                                                 <constraint firstItem="Xb9-Yc-kDP" firstAttribute="top" secondItem="Nxe-1G-SkW" secondAttribute="bottom" constant="10" id="FBD-U8-aiy"/>
                                                 <constraint firstItem="uUS-xh-p6d" firstAttribute="leading" secondItem="AO4-04-Esc" secondAttribute="trailing" constant="5" id="FR6-dY-pUb"/>
-                                                <constraint firstItem="jp6-aZ-SN9" firstAttribute="leading" secondItem="Hpo-wd-y6F" secondAttribute="leadingMargin" id="GBa-hu-BkP"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="oS2-xh-gmP" secondAttribute="trailing" constant="16" id="HEe-9P-5At"/>
                                                 <constraint firstItem="Uw4-qQ-AJm" firstAttribute="leading" secondItem="Hpo-wd-y6F" secondAttribute="leadingMargin" id="IWY-Xo-7gT"/>
-                                                <constraint firstAttribute="trailing" secondItem="6Er-Rg-d6Y" secondAttribute="trailing" constant="16" id="Jaz-oQ-x9e"/>
-                                                <constraint firstItem="jp6-aZ-SN9" firstAttribute="top" secondItem="DKm-Ys-Cg1" secondAttribute="bottom" constant="20" id="Jtr-dV-ObE"/>
                                                 <constraint firstItem="oS2-xh-gmP" firstAttribute="top" secondItem="AO4-04-Esc" secondAttribute="bottom" constant="20" id="JvF-uI-4o9"/>
                                                 <constraint firstItem="Nxe-1G-SkW" firstAttribute="top" secondItem="uUS-xh-p6d" secondAttribute="bottom" constant="10" id="Kkd-wM-SDc"/>
                                                 <constraint firstItem="DKm-Ys-Cg1" firstAttribute="leading" secondItem="Hpo-wd-y6F" secondAttribute="leadingMargin" id="Piq-Nn-6E6"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="DKm-Ys-Cg1" secondAttribute="trailing" constant="16" id="QfD-B9-INX"/>
                                                 <constraint firstAttribute="trailing" secondItem="uUS-xh-p6d" secondAttribute="trailing" constant="16" id="RXe-UZ-qa5"/>
+                                                <constraint firstItem="6Er-Rg-d6Y" firstAttribute="top" secondItem="jp6-aZ-SN9" secondAttribute="bottom" constant="8" id="RYf-Fb-4KO"/>
                                                 <constraint firstItem="Xb9-Yc-kDP" firstAttribute="leading" secondItem="AO4-04-Esc" secondAttribute="trailing" constant="5" id="aA6-hY-w1C"/>
                                                 <constraint firstItem="Uw4-qQ-AJm" firstAttribute="top" secondItem="oS2-xh-gmP" secondAttribute="bottom" constant="20" id="gIo-UW-3kA"/>
                                                 <constraint firstAttribute="trailing" secondItem="Nxe-1G-SkW" secondAttribute="trailing" constant="16" id="o3U-5w-wVV"/>
+                                                <constraint firstAttribute="trailing" secondItem="jp6-aZ-SN9" secondAttribute="trailing" constant="16" id="oFg-NP-UHS"/>
+                                                <constraint firstItem="jp6-aZ-SN9" firstAttribute="top" secondItem="DKm-Ys-Cg1" secondAttribute="bottom" constant="40" id="oxp-1x-U4B"/>
                                                 <constraint firstItem="oS2-xh-gmP" firstAttribute="leading" secondItem="Hpo-wd-y6F" secondAttribute="leadingMargin" id="uTC-64-Y9v"/>
                                                 <constraint firstItem="Nxe-1G-SkW" firstAttribute="leading" secondItem="AO4-04-Esc" secondAttribute="trailing" constant="5" id="yM8-rz-eHQ"/>
+                                                <constraint firstAttribute="trailing" secondItem="6Er-Rg-d6Y" secondAttribute="trailing" constant="16" id="zWN-R0-1ax"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
