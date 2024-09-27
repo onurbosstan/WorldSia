@@ -65,7 +65,7 @@ extension WorldVC: UICollectionViewDelegate, UICollectionViewDataSource, UIColle
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "WorldCell", for: indexPath) as? WorldCell else {
-                fatalError("WorldCell bulunamadı")
+                fatalError("WorldCell not found")
             }
             if let country = viewModel.country(at: indexPath.item) {
                 cell.configure(with: country)

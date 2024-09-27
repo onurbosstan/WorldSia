@@ -35,12 +35,12 @@ class NavigationViewModel: NSObject, CLLocationManagerDelegate {
         
         geocoder.reverseGeocodeLocation(location) { [weak self] placemarks, error in
             if let error = error {
-                print("Geocode hatası: \(error)")
+                print("Geocode error: \(error)")
                 return
             }
             
             guard let placemark = placemarks?.first else {
-                self?.onLocationUpdate?(coordinate, "Mevcut Konum")
+                self?.onLocationUpdate?(coordinate, "Current Location")
                 return
             }
             
@@ -72,7 +72,7 @@ class NavigationViewModel: NSObject, CLLocationManagerDelegate {
         let directions = MKDirections(request: directionRequest)
         directions.calculate { response, error in
             guard let response = response else {
-                print("Yol tarifi alınamadı: \(error?.localizedDescription ?? "Hata")")
+                print("Could not get directions: \(error?.localizedDescription ?? "Error")")
                 completion(nil)
                 return
             }

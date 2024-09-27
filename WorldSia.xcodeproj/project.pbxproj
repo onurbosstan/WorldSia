@@ -174,12 +174,12 @@
 			path = LocationViewControllers;
 			sourceTree = "<group>";
 		};
-		C68A498D2CA6D6EA00077225 /* LocationViewModels */ = {
+		C68A498D2CA6D6EA00077225 /* NavigationViewModels */ = {
 			isa = PBXGroup;
 			children = (
 				C68A498E2CA6D70F00077225 /* NavigationViewModel.swift */,
 			);
-			path = LocationViewModels;
+			path = NavigationViewModels;
 			sourceTree = "<group>";
 		};
 		C6A537C72C91CC5300426E42 /* System */ = {
@@ -210,7 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				C6A537CB2C91CC9000426E42 /* WorldViewModels */,
-				C68A498D2CA6D6EA00077225 /* LocationViewModels */,
+				C68A498D2CA6D6EA00077225 /* NavigationViewModels */,
 			);
 			path = UI;
 			sourceTree = "<group>";

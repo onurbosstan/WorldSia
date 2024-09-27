@@ -25,7 +25,7 @@ extension WorldDetailsVC: UITableViewDelegate, UITableViewDataSource {
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "WorldDetailsCell", for: indexPath) as? WorldDetailsCell else {
-            fatalError("WorldDetailsCell bulunamadı")
+            fatalError("WWorldDetailsCell not found")
         }
         if let viewModel = viewModel {
             cell.countryName.text = viewModel.countryName

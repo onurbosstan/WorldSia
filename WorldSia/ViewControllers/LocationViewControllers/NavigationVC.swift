@@ -36,18 +36,18 @@ class NavigationVC: UIViewController {
             
             let annotation = MKPointAnnotation()
             annotation.coordinate = coordinate
-            annotation.title = "Mevcut Konumunuz"
+            annotation.title = "Your Current Location"
             self?.mapView.addAnnotation(annotation)
         }
         viewModel.onLocationAccessDenied = { [weak self] in
-            let alert = UIAlertController(title: "Konum İzni Gerekli", message: "Lütfen konum izni verin.", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "Tamam", style: .default, handler: nil))
+            let alert = UIAlertController(title: "Location Permission Required", message: "Please grant location permission.", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Okey", style: .default, handler: nil))
             self?.present(alert, animated: true, completion: nil)
         }
     }
     @IBAction func goButton(_ sender: Any) {
         guard let destinationAddress = destinationTextField.text, !destinationAddress.isEmpty else {
-                print("Lütfen gideceğiniz adresi girin.")
+                print("Please enter your destination address.")
                 return
             }
         
@@ -56,30 +56,30 @@ class NavigationVC: UIViewController {
             let geocoder = CLGeocoder()
             geocoder.geocodeAddressString(destinationAddress) { [weak self] placemarks, error in
                 if let error = error {
-                    print("Geocode hatası: \(error.localizedDescription)")
+                    print("Geocode error: \(error.localizedDescription)")
                     return
                 }
                 
                 guard let destinationPlacemark = placemarks?.first, let destinationCoordinate = destinationPlacemark.location?.coordinate else {
-                    print("Hedef bulunamadı.")
+                    print("Target not found.")
                     return
                 }
                 
                 guard let userCoordinate = self?.userCoordinate else {
-                    print("Kullanıcı konumu alınamadı.")
+                    print("Failed to retrieve user location.")
                     return
                 }
 
                 self?.viewModel.getDirections(from: userCoordinate, to: destinationCoordinate) { polyline in
                     guard let polyline = polyline else {
-                        print("Rota bulunamadı.")
+                        print("Route not found.")
                         return
                     }
                     self?.mapView.removeAnnotations(self?.mapView.annotations ?? [])
                     
                     let destinationAnnotation = MKPointAnnotation()
                     destinationAnnotation.coordinate = destinationCoordinate
-                    destinationAnnotation.title = "Hedef"
+                    destinationAnnotation.title = "Destination"
                     self?.mapView.addAnnotation(destinationAnnotation)
                     
                     self?.mapView.addOverlay(polyline)

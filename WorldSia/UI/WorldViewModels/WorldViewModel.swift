@@ -20,7 +20,7 @@ class WorldViewModel {
                 self?.filteredCountries = countries
                 completion()
             case .failure(let error):
-                print("Veri çekme hatası: \(error.localizedDescription)")
+                print("Data extraction error: \(error.localizedDescription)")
                 completion()
             }
         }
