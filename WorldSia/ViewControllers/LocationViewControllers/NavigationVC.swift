@@ -29,6 +29,8 @@ class NavigationVC: UIViewController {
             self?.userCoordinate = coordinate
             self?.myLocation.text = address
             
+            self?.mapView.removeAnnotations(self?.mapView.annotations ?? [])
+            
             let region = MKCoordinateRegion(center: coordinate, latitudinalMeters: 1000, longitudinalMeters: 1000)
             self?.mapView.setRegion(region, animated: true)
             
@@ -48,7 +50,9 @@ class NavigationVC: UIViewController {
                 print("Lütfen gideceğiniz adresi girin.")
                 return
             }
-
+        
+            mapView.removeOverlays(mapView.overlays)
+        
             let geocoder = CLGeocoder()
             geocoder.geocodeAddressString(destinationAddress) { [weak self] placemarks, error in
                 if let error = error {
@@ -71,7 +75,13 @@ class NavigationVC: UIViewController {
                         print("Rota bulunamadı.")
                         return
                     }
-
+                    self?.mapView.removeAnnotations(self?.mapView.annotations ?? [])
+                    
+                    let destinationAnnotation = MKPointAnnotation()
+                    destinationAnnotation.coordinate = destinationCoordinate
+                    destinationAnnotation.title = "Hedef"
+                    self?.mapView.addAnnotation(destinationAnnotation)
+                    
                     self?.mapView.addOverlay(polyline)
                     let rect = polyline.boundingMapRect
                     self?.mapView.setRegion(MKCoordinateRegion(rect), animated: true)
