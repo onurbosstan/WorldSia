@@ -3,6 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Map view configurations" minToolsVersion="14.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -326,7 +327,74 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="INW-sB-1BB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6765.6488549618316" y="-68.309859154929583"/>
+            <point key="canvasLocation" x="6802" y="-68"/>
+        </scene>
+        <!--Navigation-->
+        <scene sceneID="O60-lL-bIE">
+            <objects>
+                <viewController id="Wv5-qB-5h3" customClass="NavigationVC" customModule="WorldSia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IcX-3g-Efs">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VGa-Dt-aHU">
+                                <rect key="frame" x="0.0" y="203" width="393" height="566"/>
+                                <standardMapConfiguration key="preferredConfiguration"/>
+                            </mapView>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter the place you want to go..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8gu-WW-bRm">
+                                <rect key="frame" x="16" y="139.33333333333334" width="281" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yNj-Yc-t2u">
+                                <rect key="frame" x="305" y="89" width="75" height="83"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="9eF-Hk-SU0"/>
+                                    <constraint firstAttribute="height" constant="83" id="FvG-RQ-mL5"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <imageReference key="image" image="car" catalog="system" symbolScale="large"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="goButton:" destination="Wv5-qB-5h3" eventType="touchUpInside" id="1zr-Be-rOc"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kEi-g2-G4W">
+                                <rect key="frame" x="16" y="89" width="281" height="20.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Vny-dZ-Fdi"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="VGa-Dt-aHU" firstAttribute="trailing" secondItem="Vny-dZ-Fdi" secondAttribute="trailing" id="18x-SD-oTk"/>
+                            <constraint firstItem="8gu-WW-bRm" firstAttribute="top" secondItem="kEi-g2-G4W" secondAttribute="bottom" constant="30" id="2WK-6A-Zau"/>
+                            <constraint firstItem="kEi-g2-G4W" firstAttribute="leading" secondItem="Vny-dZ-Fdi" secondAttribute="leading" constant="16" id="4Aw-sn-Oes"/>
+                            <constraint firstItem="8gu-WW-bRm" firstAttribute="leading" secondItem="Vny-dZ-Fdi" secondAttribute="leading" constant="16" id="In5-Sn-FbN"/>
+                            <constraint firstItem="yNj-Yc-t2u" firstAttribute="leading" secondItem="kEi-g2-G4W" secondAttribute="trailing" constant="8" symbolic="YES" id="TPQ-Fh-fEc"/>
+                            <constraint firstItem="VGa-Dt-aHU" firstAttribute="top" secondItem="8gu-WW-bRm" secondAttribute="bottom" constant="29.666666666666657" id="Vou-NS-JZ4"/>
+                            <constraint firstItem="VGa-Dt-aHU" firstAttribute="leading" secondItem="Vny-dZ-Fdi" secondAttribute="leading" id="Xgb-pQ-yJ1"/>
+                            <constraint firstItem="yNj-Yc-t2u" firstAttribute="leading" secondItem="8gu-WW-bRm" secondAttribute="trailing" constant="8" symbolic="YES" id="dTq-Qp-BKt"/>
+                            <constraint firstItem="kEi-g2-G4W" firstAttribute="top" secondItem="Vny-dZ-Fdi" secondAttribute="top" constant="30" id="gHJ-tW-Gnx"/>
+                            <constraint firstItem="Vny-dZ-Fdi" firstAttribute="trailing" secondItem="yNj-Yc-t2u" secondAttribute="trailing" constant="13" id="h1t-O8-thz"/>
+                            <constraint firstItem="yNj-Yc-t2u" firstAttribute="top" secondItem="Vny-dZ-Fdi" secondAttribute="top" constant="30" id="j25-Js-ngC"/>
+                            <constraint firstItem="VGa-Dt-aHU" firstAttribute="bottom" secondItem="Vny-dZ-Fdi" secondAttribute="bottom" id="pNm-ha-qMr"/>
+                            <constraint firstItem="yNj-Yc-t2u" firstAttribute="leading" secondItem="Vny-dZ-Fdi" secondAttribute="leading" constant="305" id="pPn-Z3-JdO"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Navigation" image="pin.circle" catalog="system" id="45L-7n-ujm"/>
+                    <connections>
+                        <outlet property="destinationTextField" destination="8gu-WW-bRm" id="OX0-nr-e2w"/>
+                        <outlet property="mapView" destination="VGa-Dt-aHU" id="9ko-4k-Efj"/>
+                        <outlet property="myLocation" destination="kEi-g2-G4W" id="bNs-nf-lZU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gDB-kQ-K7F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7678.6259541984728" y="-68.309859154929583"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="UH5-D3-2fx">
@@ -339,6 +407,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="3ir-FX-cZF" kind="relationship" relationship="viewControllers" id="AWM-m3-SAP"/>
+                        <segue destination="Wv5-qB-5h3" kind="relationship" relationship="viewControllers" id="oWR-oD-TWJ"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9F0-L7-MI1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -366,8 +435,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="car" catalog="system" width="128" height="95"/>
         <image name="flag.circle" catalog="system" width="128" height="123"/>
         <image name="line.3.horizontal.decrease.circle" catalog="system" width="128" height="123"/>
+        <image name="pin.circle" catalog="system" width="128" height="123"/>
         <image name="world" width="3464" height="3464"/>
         <image name="xmark" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
