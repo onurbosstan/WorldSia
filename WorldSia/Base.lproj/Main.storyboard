@@ -338,20 +338,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VGa-Dt-aHU">
-                                <rect key="frame" x="0.0" y="203" width="393" height="566"/>
+                                <rect key="frame" x="0.0" y="206.66666666666669" width="393" height="562.33333333333326"/>
                                 <standardMapConfiguration key="preferredConfiguration"/>
                             </mapView>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter the place you want to go..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8gu-WW-bRm">
-                                <rect key="frame" x="16" y="139.33333333333334" width="281" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <rect key="frame" x="16" y="135.66666666666666" width="286" height="41"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kEi-g2-G4W">
+                                <rect key="frame" x="16" y="89" width="36" height="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yNj-Yc-t2u">
-                                <rect key="frame" x="305" y="89" width="75" height="83"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="75" id="9eF-Hk-SU0"/>
-                                    <constraint firstAttribute="height" constant="83" id="FvG-RQ-mL5"/>
-                                </constraints>
+                                <rect key="frame" x="313" y="79" width="55" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain">
                                     <imageReference key="image" image="car" catalog="system" symbolScale="large"/>
@@ -360,29 +362,32 @@
                                     <action selector="goButton:" destination="Wv5-qB-5h3" eventType="touchUpInside" id="1zr-Be-rOc"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kEi-g2-G4W">
-                                <rect key="frame" x="16" y="89" width="281" height="20.333333333333329"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NgU-ht-hOw">
+                                <rect key="frame" x="318.33333333333331" y="138.66666666666666" width="49.666666666666686" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrow.clockwise.circle" catalog="system"/>
+                                <connections>
+                                    <action selector="refreshButton:" destination="Wv5-qB-5h3" eventType="touchUpInside" id="h6x-aC-OTS"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Vny-dZ-Fdi"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="VGa-Dt-aHU" firstAttribute="trailing" secondItem="Vny-dZ-Fdi" secondAttribute="trailing" id="18x-SD-oTk"/>
-                            <constraint firstItem="8gu-WW-bRm" firstAttribute="top" secondItem="kEi-g2-G4W" secondAttribute="bottom" constant="30" id="2WK-6A-Zau"/>
-                            <constraint firstItem="kEi-g2-G4W" firstAttribute="leading" secondItem="Vny-dZ-Fdi" secondAttribute="leading" constant="16" id="4Aw-sn-Oes"/>
-                            <constraint firstItem="8gu-WW-bRm" firstAttribute="leading" secondItem="Vny-dZ-Fdi" secondAttribute="leading" constant="16" id="In5-Sn-FbN"/>
-                            <constraint firstItem="yNj-Yc-t2u" firstAttribute="leading" secondItem="kEi-g2-G4W" secondAttribute="trailing" constant="8" symbolic="YES" id="TPQ-Fh-fEc"/>
-                            <constraint firstItem="VGa-Dt-aHU" firstAttribute="top" secondItem="8gu-WW-bRm" secondAttribute="bottom" constant="29.666666666666657" id="Vou-NS-JZ4"/>
-                            <constraint firstItem="VGa-Dt-aHU" firstAttribute="leading" secondItem="Vny-dZ-Fdi" secondAttribute="leading" id="Xgb-pQ-yJ1"/>
-                            <constraint firstItem="yNj-Yc-t2u" firstAttribute="leading" secondItem="8gu-WW-bRm" secondAttribute="trailing" constant="8" symbolic="YES" id="dTq-Qp-BKt"/>
-                            <constraint firstItem="kEi-g2-G4W" firstAttribute="top" secondItem="Vny-dZ-Fdi" secondAttribute="top" constant="30" id="gHJ-tW-Gnx"/>
-                            <constraint firstItem="Vny-dZ-Fdi" firstAttribute="trailing" secondItem="yNj-Yc-t2u" secondAttribute="trailing" constant="13" id="h1t-O8-thz"/>
-                            <constraint firstItem="yNj-Yc-t2u" firstAttribute="top" secondItem="Vny-dZ-Fdi" secondAttribute="top" constant="30" id="j25-Js-ngC"/>
-                            <constraint firstItem="VGa-Dt-aHU" firstAttribute="bottom" secondItem="Vny-dZ-Fdi" secondAttribute="bottom" id="pNm-ha-qMr"/>
-                            <constraint firstItem="yNj-Yc-t2u" firstAttribute="leading" secondItem="Vny-dZ-Fdi" secondAttribute="leading" constant="305" id="pPn-Z3-JdO"/>
+                            <constraint firstItem="NgU-ht-hOw" firstAttribute="top" secondItem="yNj-Yc-t2u" secondAttribute="bottom" constant="24.666666666666657" id="0i2-kb-KVD"/>
+                            <constraint firstItem="yNj-Yc-t2u" firstAttribute="top" secondItem="Vny-dZ-Fdi" secondAttribute="top" constant="20" id="2PS-Ca-wd5"/>
+                            <constraint firstItem="VGa-Dt-aHU" firstAttribute="bottom" secondItem="Vny-dZ-Fdi" secondAttribute="bottom" id="2d1-Pb-DYE"/>
+                            <constraint firstItem="8gu-WW-bRm" firstAttribute="top" secondItem="kEi-g2-G4W" secondAttribute="bottom" constant="29.666666666666671" id="2gB-3L-NVf"/>
+                            <constraint firstItem="Vny-dZ-Fdi" firstAttribute="trailing" secondItem="NgU-ht-hOw" secondAttribute="trailing" constant="25" id="678-nA-I02"/>
+                            <constraint firstItem="VGa-Dt-aHU" firstAttribute="top" secondItem="8gu-WW-bRm" secondAttribute="bottom" constant="30" id="EpB-5N-hnh"/>
+                            <constraint firstItem="kEi-g2-G4W" firstAttribute="top" secondItem="Vny-dZ-Fdi" secondAttribute="top" constant="30" id="Ewa-eI-tYj"/>
+                            <constraint firstItem="VGa-Dt-aHU" firstAttribute="trailing" secondItem="Vny-dZ-Fdi" secondAttribute="trailing" id="GRt-T5-vJ4"/>
+                            <constraint firstItem="Vny-dZ-Fdi" firstAttribute="trailing" secondItem="yNj-Yc-t2u" secondAttribute="trailing" constant="25" id="HLT-rI-Uvb"/>
+                            <constraint firstItem="NgU-ht-hOw" firstAttribute="leading" secondItem="8gu-WW-bRm" secondAttribute="trailing" constant="16.333333333333314" id="RML-QY-AP4"/>
+                            <constraint firstItem="VGa-Dt-aHU" firstAttribute="leading" secondItem="Vny-dZ-Fdi" secondAttribute="leading" id="Snl-Fc-mJo"/>
+                            <constraint firstItem="kEi-g2-G4W" firstAttribute="leading" secondItem="Vny-dZ-Fdi" secondAttribute="leading" constant="16" id="UlP-IR-fqq"/>
+                            <constraint firstItem="8gu-WW-bRm" firstAttribute="leading" secondItem="Vny-dZ-Fdi" secondAttribute="leading" constant="16" id="h5x-Eb-K1k"/>
+                            <constraint firstItem="8gu-WW-bRm" firstAttribute="centerY" secondItem="NgU-ht-hOw" secondAttribute="centerY" id="i0B-Ev-pft"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Navigation" image="pin.circle" catalog="system" id="45L-7n-ujm"/>
@@ -435,6 +440,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="arrow.clockwise.circle" catalog="system" width="128" height="123"/>
         <image name="car" catalog="system" width="128" height="95"/>
         <image name="flag.circle" catalog="system" width="128" height="123"/>
         <image name="line.3.horizontal.decrease.circle" catalog="system" width="128" height="123"/>

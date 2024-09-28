@@ -88,6 +88,23 @@ class NavigationVC: UIViewController {
                 }
             }
     }
+    
+    @IBAction func refreshButton(_ sender: Any) {
+        guard let currentCoordinate = userCoordinate else {
+            print("User location not found")
+            return
+        }
+        mapView.removeAnnotations(mapView.annotations)
+        mapView.removeOverlays(mapView.overlays)
+        
+        let region = MKCoordinateRegion(center: currentCoordinate, latitudinalMeters: 1000, longitudinalMeters: 1000)
+        mapView.setRegion(region, animated: true)
+        
+        let annotation = MKPointAnnotation()
+        annotation.coordinate = currentCoordinate
+        annotation.title = "Your Current Location"
+        mapView.addAnnotation(annotation)
+    }
 }
 extension NavigationVC: MKMapViewDelegate {
     func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {

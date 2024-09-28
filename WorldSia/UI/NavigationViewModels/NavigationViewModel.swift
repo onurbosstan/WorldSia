@@ -67,7 +67,7 @@ class NavigationViewModel: NSObject, CLLocationManagerDelegate {
         let directionRequest = MKDirections.Request()
         directionRequest.source = MKMapItem(placemark: sourcePlaceMark)
         directionRequest.destination = MKMapItem(placemark: destinationPlaceMark)
-        directionRequest.transportType = .automobile  // Yürüyüş, bisiklet de seçilebilir
+        directionRequest.transportType = .automobile
         
         let directions = MKDirections(request: directionRequest)
         directions.calculate { response, error in
