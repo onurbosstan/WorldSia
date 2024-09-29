@@ -419,11 +419,11 @@
             </objects>
             <point key="canvasLocation" x="4156" y="-68"/>
         </scene>
-        <!--Flags-->
+        <!--Countries-->
         <scene sceneID="MpN-gn-edP">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3ir-FX-cZF" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Flags" image="flag.circle" catalog="system" id="1up-IB-gb5"/>
+                    <tabBarItem key="tabBarItem" title="Countries" image="flag.circle" catalog="system" id="1up-IB-gb5"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="eax-8f-GgR">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
