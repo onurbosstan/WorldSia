@@ -20,16 +20,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="world" translatesAutoresizingMaskIntoConstraints="NO" id="nMa-bG-F5l">
-                                <rect key="frame" x="16" y="48" width="60" height="50"/>
+                                <rect key="frame" x="20" y="48" width="60" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="7Ss-e1-MUc"/>
                                     <constraint firstAttribute="width" constant="60" id="ZWs-Oc-07m"/>
                                 </constraints>
                             </imageView>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pkr-KJ-aFr">
-                                <rect key="frame" x="327" y="48" width="50" height="34.333333333333343"/>
+                                <rect key="frame" x="353" y="48" width="24" height="14"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="line.3.horizontal.decrease.circle" catalog="system"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
                                 <connections>
                                     <action selector="menuButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xPJ-ph-7m8"/>
                                 </connections>
@@ -95,10 +95,18 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="zsA-jk-yu8"/>
                                 </connections>
                             </searchBar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WorldSia" translatesAutoresizingMaskIntoConstraints="NO" id="4AD-tt-5xB">
+                                <rect key="frame" x="144" y="53" width="105" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="FfX-Ev-q0Y"/>
+                                    <constraint firstAttribute="width" constant="105" id="je8-gS-dHy"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="4AD-tt-5xB" firstAttribute="centerY" secondItem="nMa-bG-F5l" secondAttribute="centerY" id="0AI-yW-q6W"/>
                             <constraint firstItem="nMa-bG-F5l" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="48" id="3qV-lS-G19"/>
                             <constraint firstItem="A26-g2-dOK" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="7IQ-Nl-uxk"/>
                             <constraint firstItem="jCG-lN-R1V" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9LL-XI-bhR"/>
@@ -109,7 +117,8 @@
                             <constraint firstItem="A26-g2-dOK" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="kNK-dS-bco"/>
                             <constraint firstItem="A26-g2-dOK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mJV-PH-Whz"/>
                             <constraint firstItem="A26-g2-dOK" firstAttribute="top" secondItem="jCG-lN-R1V" secondAttribute="bottom" constant="10" id="pfz-2h-ZiP"/>
-                            <constraint firstItem="nMa-bG-F5l" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="tS2-y2-QJL"/>
+                            <constraint firstItem="nMa-bG-F5l" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="tS2-y2-QJL"/>
+                            <constraint firstItem="4AD-tt-5xB" firstAttribute="leading" secondItem="nMa-bG-F5l" secondAttribute="trailing" constant="64" id="yMd-6V-MeD"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="DoZ-9c-v3a"/>
@@ -440,10 +449,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="WorldSia" width="456" height="115"/>
         <image name="arrow.clockwise.circle" catalog="system" width="128" height="123"/>
         <image name="car" catalog="system" width="128" height="95"/>
         <image name="flag.circle" catalog="system" width="128" height="123"/>
-        <image name="line.3.horizontal.decrease.circle" catalog="system" width="128" height="123"/>
         <image name="pin.circle" catalog="system" width="128" height="123"/>
         <image name="world" width="3464" height="3464"/>
         <image name="xmark" catalog="system" width="128" height="113"/>
